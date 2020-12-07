@@ -1,0 +1,125 @@
+.App {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: #e7e7e7;
+  font-size: 14px;
+}
+.AppTitle {
+  padding: 15px 0 0 15px;
+}
+.Container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.Filter {
+  width: calc(100% - 20px);
+  background-color: white;
+  padding-bottom: 40px;
+  margin: 0 10px 10px 10px;
+}
+.filterTitle{
+  margin: 0 20%;
+  border-bottom: 1px solid #e7e7e7;
+  text-align: center;
+}
+.filterContent{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filterContent div{
+  background-color: #b7e288;
+  width: 30%;
+  margin: 5px 10%;
+  border-radius: 5px;
+  padding: 2px 10px;
+}
+
+.filterContent div:hover{
+  cursor: pointer;
+}
+
+.filterContent div.selected{
+  background-color: #8db166;
+}
+
+.MissleContent {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Missile{
+  width: calc(100% - 20px);
+  padding: 15px;
+  margin: 0 10px 10px 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Missile img{
+  background-color: #e7e7e7;
+}
+
+.missileName{
+  color: #2a448c;
+  font-weight: bold;
+}
+.developer {
+  text-align: center;
+  margin: 20px;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  .Filter {
+    width: calc(33% - 20px);
+    background-color: white;
+    padding-bottom: 40px;
+  }
+  .MissleContent {
+    width: 66%;
+  }
+  .Missile{
+    width: calc(50% - 20px);
+    padding: 15px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .Filter {
+    width: calc(20% - 20px);
+    background-color: white;
+    padding-bottom: 40px;
+  }
+  .MissleContent {
+    width: 80%;
+  }
+  .Missile{
+    width: calc(25% - 20px);
+    padding: 15px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .App {
+    max-width: 1440px;
+    margin: auto;
+  }
+  .Filter {
+    width: calc(20% - 20px);
+    background-color: white;
+    padding-bottom: 40px;
+  }
+  .MissleContent {
+    width: 80%;
+  }
+  .Missile{
+    width: calc(25% - 20px);
+    padding: 15px;
+  }
+}
+
